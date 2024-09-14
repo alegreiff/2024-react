@@ -1,30 +1,24 @@
-import image1 from "/assets/jsx-ui.png";
-const reactDescriptions = ["CLAVES", "BÁSICOS", "IMPRESCINDIBLES"];
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
-}
-function Header() {
-  const description = reactDescriptions[getRandomInt(3)];
-  return (
-    <>
-      <header>
-        <img src={image1} alt="Stylized atom" />
-        <h1>Jaime de Greiff @alegreiff</h1>
-        <p>
-          Conceptos {description} de react que son necesarios para desarrollar
-          un app
-        </p>
-      </header>
-    </>
-  );
-}
+import componetsImage from "/assets/react-core-concepts.png";
+import { CORE_CONCEPTS } from "./data";
+import Header from "./components/Header/Header";
+import { Biko } from "./components/Biko";
+import { CoreConcept } from "./components/CoreConcept/CoreConcept";
 
 function App() {
   return (
     <div>
       <Header />
       <main>
-        <h2>Empezamos porque se hace tarde</h2>
+        <section id="core-concepts">
+          <h2>Empezamos porque se hace tarde</h2>
+          <ul>
+            <CoreConcept {...CORE_CONCEPTS[0]} />
+            <CoreConcept {...CORE_CONCEPTS[1]} />
+            <CoreConcept {...CORE_CONCEPTS[2]} />
+            <CoreConcept {...CORE_CONCEPTS[3]} />
+          </ul>
+        </section>
+        <Biko />
       </main>
     </div>
   );
