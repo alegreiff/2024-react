@@ -2,7 +2,7 @@ function Header() {
   return (
     <>
       <header>
-        <img src="public/assets/react-core-concepts.png" alt="Stylized atom" />
+        <img src="/assets/react-core-conceptss.png" alt="Stylized atom" />
         <h1>Jaime de Greiff @alegreiff</h1>
         <p>
           Conceptos básicos de react que son necesario s para desarrollar un app
