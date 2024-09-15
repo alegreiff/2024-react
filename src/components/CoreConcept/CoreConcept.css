@@ -21,6 +21,7 @@
 }
 
 #core-concepts li img {
+  @apply mx-auto;
   height: 4rem;
   width: 6rem;
   object-fit: cover;
