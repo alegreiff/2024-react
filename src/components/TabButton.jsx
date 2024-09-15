@@ -1,10 +1,10 @@
 import React from "react";
 
-export const TabButton = ({children, onMyClick }) => {
+export const TabButton = ({children, onMyClick, isSelected }) => {
   
   return (
     <li>
-      <button onClick={onMyClick}  className="btn bg-pink-800 text-slate-200">
+      <button onClick={onMyClick}  className={isSelected ? 'active' : ''}>
         {children}
       </button>
     </li>
